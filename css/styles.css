@@ -31,6 +31,10 @@ nav {
   padding: 1.5rem 3rem;
   border-radius: 5rem;
   transition: .3s;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 1rem;
 }
 
 .button-nav:hover {
@@ -46,6 +50,8 @@ nav button {
   cursor: pointer;
 }
 
+
+/* =============== HEADER LINE */
 header {
   width: 60%;
   margin: 7rem auto;
@@ -57,13 +63,12 @@ header {
 header h1 {
   font-size: 5rem;
   color: var(--purple);
+  width: 70%;
 }
 
-.description {
-  color: var(--default);
-  font-size: 1.3rem;
+.underline{
+  text-decoration: underline var(--yellow);
 }
-
 .price {
   color: var(--purple);
   font-size: 3rem;
@@ -74,11 +79,6 @@ header h1 {
   font-size: 4rem;
 }
 
-.centavos {
-  margin-left: -1rem;
-}
-
-
 
 /* ============== VIDEOS IFRAMES */
 
@@ -87,7 +87,7 @@ main {
   flex-direction: row;
   justify-content: center space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem 2rem;
   flex-wrap: wrap;
   width: calc(100% - 40%);
   margin: auto;
@@ -112,6 +112,9 @@ iframe {
   border-radius: .5rem;
 }
 
+.details-video{
+  text-align: center;
+}
 
 
 /* ================ SECTION */
@@ -119,22 +122,12 @@ section {
   border-radius: 1rem;
   width: calc(100% - 40%);
   margin: 3rem auto;
-  padding: 3rem;
   transition: .3s;
-}
-
-section:hover {
-  box-shadow: 0 0 1rem 2px #c0c0c0;
-  transition-duration: .3s;
 }
 
 article h1 {
   font-size: 3rem;
   color: var(--purple);
-}
-
-article p {
-  color: var(--default);
 }
 
 .cta-footer {
@@ -151,6 +144,9 @@ article p {
   border-radius: 5rem;
   color: var(--purple);
   transition: .3s;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .cta-footer a:hover {
@@ -185,4 +181,7 @@ footer {
 
 .midia-icon-svg {
   width: 2rem;
+}
+.icon-contact{
+  max-width: 2rem;
 }
