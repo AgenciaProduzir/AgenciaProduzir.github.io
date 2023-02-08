@@ -58,6 +58,8 @@ header {
   gap: 2rem;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 header h1 {
@@ -71,12 +73,16 @@ header h1 {
 }
 .price {
   color: var(--purple);
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
+  background-color: var(--yellow);
+  padding: 1rem 3rem;
+  border-radius: 5rem;
 }
 
 .price-big {
-  font-size: 4rem;
+  font-size: 5rem;
+  color: var();
 }
 
 
@@ -106,10 +112,16 @@ main {
   transition: .3s;
 }
 
+.iframe:hover iframe{
+  transform: scale(1.02);
+  transition: .3s all ease-in-out;
+}
+
 iframe {
   width: 100%;
   height: 100%;
   border-radius: .5rem;
+  transition: .3s;
 }
 
 .details-video{
